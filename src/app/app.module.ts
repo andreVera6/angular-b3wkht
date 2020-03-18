@@ -15,6 +15,7 @@ import { HeroesComponent }      from './heroes/heroes.component';
 import { HeroSearchComponent }  from './hero-search/hero-search.component';
 import { MessagesComponent }    from './messages/messages.component';
 import { PetsComponent } from './pets/pets.component';
+import { PetsService } from './pets.service';
 
 @NgModule({
   imports: [
@@ -39,7 +40,8 @@ import { PetsComponent } from './pets/pets.component';
     HeroSearchComponent,
     PetsComponent
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
+  providers: [PetsService]
 })
 
 export class AppModule { }
