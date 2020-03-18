@@ -23,6 +23,17 @@ export class InMemoryDataService implements InMemoryDbService {
     return {heroes};
   }
 
+  createrDb2() {
+    const pets = [  { id: 111, name: 'Rio' },
+      { id: 112, name: 'Lusa' },
+      { id: 113, name: 'Petit' },
+      { id: 114, name: 'Noori' },
+      { id: 115, name: 'Zaki' },
+      { id: 116, name: 'Lassie' },
+      { id: 117, name: 'Neri' }];
+      return {pets};
+  }
+
   // Overrides the genId method to ensure that a hero always has an id.
   // If the heroes array is empty,
   // the method below returns the initial number (11).

@@ -6,6 +6,12 @@
       <h4>{{hero.name}}</h4>
     </div>
   </a>
+  <a *ngFor="let pet of pets" class="col-1-4" 
+      routerLink="/detail/{{pet.id}}">
+      <div class="module pet">
+        <h4>{{pet.name}}</h4>
+        </div>
+        </a>
 </div>
 
 <app-hero-search></app-hero-search>
