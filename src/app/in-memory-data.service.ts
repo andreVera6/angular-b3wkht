@@ -25,10 +25,11 @@ export class InMemoryDataService implements InMemoryDbService {
 
   createrDb2() {
     const pets = [  { id: 111, name: 'Rio' },
+      { id: 111, name: 'Zak' },
       { id: 112, name: 'Lusa' },
-      { id: 113, name: 'Petit' },
-      { id: 114, name: 'Noori' },
-      { id: 115, name: 'Zaki' },
+      { id: 113, name: 'Noori' },
+      { id: 114, name: 'Petit' },
+      { id: 115, name: 'Rio' },
       { id: 116, name: 'Lassie' },
       { id: 117, name: 'Neri' }];
       return {pets};
@@ -42,7 +43,7 @@ export class InMemoryDataService implements InMemoryDbService {
   genId(heroes: Hero[]): number {
     return heroes.length > 0 ? Math.max(...heroes.map(hero => hero.id)) + 1 : 11;
   }
-   genIdPet(pets: Pet[]): number {
-    return pets.length > 0 ? Math.max(...pets.map(pets => pets.id)) + 1 : 11;
+  genIdPet(pets: Pet[]): number {
+    return pets.length > 0 ? Math.max(...pets.map(pets => pets.id)) + 1 : 111;
   }
 }

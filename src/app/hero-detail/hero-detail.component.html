@@ -7,8 +7,7 @@
     </label>
   </div>
   <div>
-    <label>Pet Name: <input [(ngModel)]="pet.name" placeholder="name"/>  
-    </label>
+    <a routerLink="/pets" (click)= "setHero(hero.name)">Choose Pet</a>
   </div>
 
   <button (click)="goBack()">go back</button>
